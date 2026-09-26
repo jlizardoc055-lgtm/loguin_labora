@@ -1,0 +1,19 @@
+mi-proyecto/
+├── .env                    (crear localmente; NO subir)
+├── .env.example            (copiar desde este módulo)
+├── .gitignore              (copiar/combinar)
+├── package.json            (copiar/combinar dependencias y scripts)
+├── render.yaml             (copiar)
+├── server.js               (copiar)
+├── config/db.js            (copiar)
+├── controllers/authController.js
+├── middleware/authMiddleware.js
+├── models/Usuario.js
+├── routes/authRoutes.js
+└── public/
+    ├── index.html           (SU archivo original movido aquí)
+    ├── style.css            (SU archivo original movido aquí)
+    ├── script.js            (SU archivo original movido aquí)
+    └── auth/
+        ├── auth.css         (copiar)
+        └── auth.js          (copiar)

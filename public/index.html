@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<script src="/auth/auth.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tienda de Zapatillas</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="/auth/auth.css">
+</head>
+
+<body>
+    <header>
+        <nav data-auth-actions></nav>
+        <h1>Tienda de Zapatillas</h1>
+
+        <input type="text" id="buscar" placeholder="Buscar zapatillas...">
+
+        <select id="categoria">
+            <option value="Todos">Todos</option>
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Puma">Puma</option>
+        </select>
+    </header>
+
+    <main>
+
+        <div id="productos" class="grid"></div>
+
+        <p id="mensaje"></p>
+
+    </main>
+
+    <!-- Modal -->
+
+    <div id="modal" class="modal">
+
+        <div class="contenido">
+
+            <span id="cerrar">&times;</span>
+
+            <img id="imgGrande">
+
+            <h2 id="nombre"></h2>
+
+            <p id="descripcion"></p>
+
+            <h3 id="precio"></h3>
+
+            <button id="carrito">Agregar al carrito</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

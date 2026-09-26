@@ -1,0 +1,10 @@
+CAMBIO 1 — en <head>, inmediatamente DESPUÉS del <link> de style.css:
+<link rel="stylesheet" href="/auth/auth.css">
+
+CAMBIO 2 — dentro de <body>, donde quieras mostrar Ingresar / Registrarse:
+<nav data-auth-actions></nav>
+
+CAMBIO 3 — antes de </body>, inmediatamente DESPUÉS del <script> que ya carga script.js:
+<script src="/auth/auth.js"></script>
+
+IMPORTANTE: no vuelvas a agregar style.css ni script.js si ya están enlazados en tu index.html.
