@@ -1,0 +1,18 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Prometheus se monitorea a sí mismo
+  - job_name: "prometheus"
+    static_configs:
+      - targets:
+          - "localhost:10000"
+
+  # Aplicación Node.js desplegada en Render
+  - job_name: "mi-web-auth"
+    scheme: https
+    metrics_path: /metrics
+    static_configs:
+      - targets:
+          - "render-mongodb-demo-gjfc.onrender.com"
